@@ -22,9 +22,18 @@ function App() {
         <section className="menu">
           <h2>Our Menu</h2>
           <ul>
-            <li>Margherita - $10</li>
-            <li>Pepperoni - $12</li>
-            <li>Veggie - $11</li>
+            <li>
+              <img src="/images/margherita.jpg" alt="Margherita" />
+              Margherita - $10
+            </li>
+            <li>
+              <img src="/images/pepperoni.jpg" alt="Pepperoni" />
+              Pepperoni - $12
+            </li>
+            <li>
+              <img src="/images/veggie.jpg" alt="Veggie" />
+              Veggie - $11
+            </li>
           </ul>
         </section>
 
@@ -55,7 +64,7 @@ function App() {
     </div>
   ) : (
     <button onClick={() => signIn()}>Login</button>
-  )};
+  )}
   </>
   )
 }

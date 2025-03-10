@@ -49,6 +49,7 @@
   background-color: #333;
   color: white;
   padding: 1rem;
+  width: 100%; /* Added to stretch over the entire screen width */
 }
 
 .top-nav h1 {
@@ -65,4 +66,65 @@
 
 .top-nav button:hover {
   background-color: #ff1a1a;
+}
+
+.menu {
+  background-color: #030303;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.menu img {
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+  display: block;
+  margin-right: 1rem; /* Add margin to the right of the image */
+}
+
+.order {
+  background-color: #030303;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.order form div {
+  margin-bottom: 1rem;
+}
+
+.order label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.order input,
+.order select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.order button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.order button:hover {
+  background-color: #218838;
 }
