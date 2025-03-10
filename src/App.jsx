@@ -8,10 +8,13 @@ function App() {
     <>
     {state.isAuthenticated ? (
     <div className="app-container">
-      <header>
+      <nav className="top-nav">
         <h1>Pizza Shack</h1>
-        <p>Your favorite pizza delivery app!</p>
         <button onClick={() => signOut()}>Logout</button>
+      </nav>
+
+      <header>
+        <p>Your favorite pizza delivery app!</p>
       </header>
 
       <main>
@@ -58,4 +61,3 @@ function App() {
 }
 
 export default App;
-

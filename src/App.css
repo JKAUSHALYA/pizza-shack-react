@@ -40,3 +40,29 @@
 .read-the-docs {
   color: #888;
 }
+
+/* P7ee2 */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+.top-nav h1 {
+  margin: 0;
+}
+
+.top-nav button {
+  background-color: #ff4b4b;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.top-nav button:hover {
+  background-color: #ff1a1a;
+}
