@@ -63,7 +63,10 @@ function App() {
       </footer>
     </div>
   ) : (
-    <button onClick={() => signIn()}>Login</button>
+    <div className="login-box">
+      <p>Please login</p>
+      <button onClick={() => signIn()}>Login</button>
+    </div>
   )}
   </>
   )

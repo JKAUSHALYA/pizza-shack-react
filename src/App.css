@@ -128,3 +128,37 @@
 .order button:hover {
   background-color: #218838;
 }
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 10vw;
+  height: 10vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #0a0a0a;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.login-box p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.login-box button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.login-box button:hover {
+  background-color: #218838;
+}
