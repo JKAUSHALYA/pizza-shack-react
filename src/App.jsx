@@ -65,6 +65,9 @@ function App() {
     </div>
   ) : (
     <div className="login-box">
+      <img src="/images/logo.jpg" alt="Pizza Shack Logo" className="login-logo" />
+      <h1>Pizza Shack</h1>
+      <p>Your favorite pizza delivery app!</p>
       <p>Please login</p>
       <button onClick={() => signIn()}>Login</button>
     </div>
