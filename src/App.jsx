@@ -9,8 +9,9 @@ function App() {
     {state.isAuthenticated ? (
     <div className="app-container">
       <nav className="top-nav">
+        <img src="/images/logo.jpg" alt="Pizza Shack Logo" className="logo" />
         <h1>Pizza Shack</h1>
-        <button onClick={() => signOut()}>Logout</button>
+        <button onClick={() => signOut()} className="logout-button">Logout</button>
       </nav>
 
       <header>
