@@ -49,7 +49,30 @@
   background-color: rgba(51, 51, 51, 0.8); /* Add semi-transparent background */
   color: white;
   padding: 1rem;
-  width: 100%; /* Added to stretch over the entire screen width */
+  border-radius: 8px; /* Round the corners */
+  gap: 1rem; /* Add space between items */
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem; /* Add space between buttons */
+}
+
+.account-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.account-button:hover {
+  background-color: #0056b3;
 }
 
 .top-nav h1 {
@@ -101,6 +124,8 @@
 
 .order form div {
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .order label {
@@ -114,6 +139,7 @@
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+  box-sizing: border-box; /* Ensure the width includes padding and border */
 }
 
 .order button {
@@ -176,4 +202,9 @@
 
 .login-box button:hover {
   background-color: #218838;
+}
+
+header p {
+  color: black;
+  font-weight: bold;
 }

@@ -11,7 +11,10 @@ function App() {
       <nav className="top-nav">
         <img src="/images/logo.jpg" alt="Pizza Shack Logo" className="logo" />
         <h1>Pizza Shack</h1>
-        <button onClick={() => signOut()} className="logout-button">Logout</button>
+        <div className="nav-buttons">
+          <a href="https://myaccount.asgardeo.io/t/jayangak" className="account-button">My Account</a>
+          <button onClick={() => signOut()} className="logout-button">Logout</button>
+        </div>
       </nav>
 
       <header>
@@ -28,12 +31,12 @@ function App() {
               Margherita - $10
             </li>
             <li>
-              <img src="/images/pepperoni.jpg" alt="Pepperoni" />
-              Pepperoni - $12
+              <img src="/images/4-cheese.jpg" alt="4 Cheese" />
+              4 Cheese - $12
             </li>
             <li>
-              <img src="/images/veggie.jpg" alt="Veggie" />
-              Veggie - $11
+              <img src="/images/pizza-marinara.jpg" alt="Pizza Marinara" />
+              Pizza Marinara - $11
             </li>
           </ul>
         </section>
