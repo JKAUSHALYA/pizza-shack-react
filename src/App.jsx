@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useAuthContext } from '@asgardeo/auth-react'
 import './App.css'
 
 function App() {
   const { state, signIn, signOut } = useAuthContext();
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownVisible(!dropdownVisible);
+  };
+
   return (
     <>
     {state.isAuthenticated ? (
@@ -12,8 +18,15 @@ function App() {
         <img src="/images/logo.jpg" alt="Pizza Shack Logo" className="logo" />
         <h1>Pizza Shack</h1>
         <div className="nav-buttons">
-          <a href="https://myaccount.asgardeo.io/t/jayangak" className="account-button">My Account</a>
-          <button onClick={() => signOut()} className="logout-button">Logout</button>
+          <div className="dropdown">
+            <span className="username" onClick={toggleDropdown}>Welcome! {state.username}</span>
+            {dropdownVisible && (
+              <div className="dropdown-content">
+                <a href="https://myaccount.asgardeo.io/t/jayangak" className="account-button">My Account</a>
+                <button onClick={() => signOut()} className="logout-button">Logout</button>
+              </div>
+            )}
+          </div>
         </div>
       </nav>
 
