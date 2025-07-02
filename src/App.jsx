@@ -31,7 +31,7 @@ function App() {
       </nav>
 
       <header>
-        <p>Your favorite pizza delivery app!</p>
+        <p>--</p>
       </header>
 
       <main>

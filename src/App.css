@@ -154,6 +154,7 @@
   padding: 2rem;
   border-radius: 8px;
   margin-bottom: 2rem;
+  color: white; /* Change text color to white */
 }
 
 .menu ul {
@@ -178,6 +179,7 @@
   background-color: #030303;
   padding: 2rem;
   border-radius: 8px;
+  color: white; /* Change text color to white */
 }
 
 .order form div {
